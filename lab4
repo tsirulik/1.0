@@ -1,0 +1,65 @@
+#Лабораторная работа №4.
+##Основные типы и операции в Python
+1.Написать решение задания
+``` python
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+# есть список животных в зоопарке
+
+zoo = ['lion', 'kangaroo', 'elephant', 'monkey', ]
+
+# посадите медведя (bear) между львом и кенгуру
+#  и выведите список на консоль
+# TODO здесь ваш код
+zoo = ['lion', 'kangaroo', 'elephant', 'monkey', ]
+zoo.insert(1,'bear')
+print(zoo)
+
+# добавьте птиц из списка birds в последние клетки зоопарка
+birds = ['rooster', 'ostrich', 'lark', ]
+#  и выведите список на консоль
+# TODO здесь ваш код
+a = zoo + birds
+print(a)
+
+# уберите слона
+#  и выведите список на консоль
+# TODO здесь ваш код
+a.remove('elephant')
+print(a)
+# выведите на консоль в какой клетке сидит лев (lion) и жаворонок (lark).
+# Номера при выводе должны быть понятны простому человеку, не программисту.
+# TODO здесь ваш код
+index_1 = a.index('lion')
+index_2 = a.index('lark')
+print("Лев сидит в клетке номер", index_1 + 1)
+print("Жаворонок сидит в клетке номер", index_2 + 1)
+
+# Покройте реализованную фукциональность тестами с использованием pytest.
+def test_insert_bear_between_lion_and_kangaroo():
+    zoo = ['lion', 'kangaroo', 'elephant', 'monkey']
+    zoo.insert(1, 'bear')
+    assert zoo == ['lion', 'bear', 'kangaroo', 'elephant', 'monkey']
+
+def test_add_birds_to_zoo():
+    zoo = ['lion', 'kangaroo', 'elephant', 'monkey']
+    birds = ['rooster', 'ostrich', 'lark']
+    zoo += birds
+    assert zoo == ['lion', 'kangaroo', 'elephant', 'monkey', 'rooster', 'ostrich', 'lark']
+
+def test_remove_elephant_from_zoo():
+    zoo = ['lion', 'bear', 'kangaroo', 'elephant', 'monkey', 'rooster', 'ostrich', 'lark']
+    zoo.remove('elephant')
+    assert zoo == ['lion', 'bear', 'kangaroo', 'monkey', 'rooster', 'ostrich', 'lark']
+
+def test_find_lion_and_lark_cells_in_zoo():
+    zoo = ['lion', 'bear', 'kangaroo', 'monkey', 'rooster', 'ostrich', 'lark']
+    index_1 = zoo.index('lion')
+    index_2 = zoo.index('lark')
+    assert index_1 + 1 == 1
+    assert index_2 + 1 == 7
+```
+2. Результат решения
+
+![display:block;margin:auto|](17.png)
