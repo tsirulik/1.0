@@ -1,4 +1,7 @@
-# 00
+#Лабораторная работа №4.
+##Основные типы и операции в Python
+1.Написать решение задания 00
+``` python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -25,10 +28,9 @@ for city1 in sites:
 
 print(distances)
 
-
-
-
-# 01
+```
+2.Написать решение задания 01
+``` python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -75,10 +77,10 @@ print(inside_2)
 # 77777.7777
 # False
 # False
+```
 
-
-
-# 02
+3.Написать решение задания 02
+``` python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -95,8 +97,10 @@ print(inside_2)
 # TODO написать формулу для 1 2 3 4 5 и вывести значение на консоль
 result = ((1 * 2)+ 3 + (4 * 5))
 print(result)
+```
 
-# 03
+4.Написать решение задания 03
+``` python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -131,9 +135,10 @@ print(second_movie)
 # второй с конца фильм
 second_last_movie = my_favorite_movies[-22:-17]
 print(second_last_movie)
+```
 
-
-# 04
+5.Написать решение задания 04
+``` python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -159,10 +164,10 @@ print('Рост отца - ',my_family_height[1][1]  , 'см' )
 # Выведите на консоль общий рост вашей семьи как сумму ростов всех членов
 #   Общий рост моей семьи - ХХ см
 print(my_family_height[0][1]+my_family_height[1][1]+my_family_height[2][1])
+```
 
-
-
-# 05
+6.Написать решение задания 05
+``` python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -220,8 +225,10 @@ def test_find_lion_and_lark_cells_in_zoo():
     index_2 = zoo.index('lark')
     assert index_1 + 1 == 1
     assert index_2 + 1 == 7
+```
 
-# 06
+7.Написать решение задания 06
+``` python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -276,8 +283,10 @@ w=(violator_songs_list[6][1])
 r=(violator_songs_list[7][1])
 bim=q+w+r
 print('А другие три песни звучат', round(bim), 'минут')
+```
 
-# 07
+8.Написать решение задания 07
+``` python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -316,7 +325,10 @@ secret_message = [
 
 print(secret_message[0][3],secret_message[1][9:13],secret_message[2][5:15:2],secret_message[3][12:6:-1],secret_message[4][20:15:-1])
 
-# 08
+```
+
+9.Написать решение задания 08
+``` python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -350,8 +362,10 @@ print(garden_set-meadow_set)
 # выведите на консоль те, которые растут на лугу, но не растут в саду
 # TODO здесь ваш код
 print(meadow_set-garden_set)
+```
 
-# 09
+10.Написать решение задания 09
+``` python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -408,9 +422,10 @@ sweets = {
         {'shop': 'магнит', 'price': 62.99}
     ]
 }
+```
 
-# 10
-
+11.Написать решение задания 10
+``` python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -497,5 +512,31 @@ print('стол -', table_quantity, 'шт, стоимость', table_cost, 'р�
 print('диван -', sofa_quantity, 'шт, стоимость', sofa_cost, 'руб')
 print('стул -', chair_quantity, 'шт, стоимость', chair_cost, 'руб')
 
+```
 
 
+
+12. Результаты решений:
+
+Решение к заданию 00:
+![display:block;margin:auto|](1.png)
+Решение к заданию 01:
+![display:block;margin:auto|](2.png)
+Решение к заданию 02:
+![display:block;margin:auto|](3.png)
+Решение к заданию 03:
+![display:block;margin:auto|](4.png)
+Решение к заданию 04:
+![display:block;margin:auto|](5.png)
+Решение к заданию 05:
+![display:block;margin:auto|](6.png)
+Решение к заданию 06:
+![display:block;margin:auto|](7.png)
+Решение к заданию 07:
+![display:block;margin:auto|](8.png)
+Решение к заданию 08:
+![display:block;margin:auto|](9.png)
+Решение к заданию 09:
+![display:block;margin:auto|](10.png)
+Решение к заданию 10:
+![display:block;margin:auto|](11.png)
