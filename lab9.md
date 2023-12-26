@@ -5,6 +5,7 @@
 ```python
 import random
 import string
+
 def generate_password(length=8):
     """
     Функция генерирует пароль заданной длины, состоящий
@@ -17,14 +18,18 @@ def generate_password(length=8):
     Возвращает:
     - str: сгенерированный пароль
     """
+    # Создание строки, содержащей все возможные символы для пароля
     characters = string.ascii_letters + string.digits + string.punctuation
+
+    # Генерация пароля при помощи генератора yield
     password = ''.join(random.choice(characters) for _ in range(length))
-    return password
+    yield password
+
 # Пример использования функции generate_password()
-password = generate_password(12)
+password = next(generate_password(8))
 print(password)
 ```
 
 2. Результаты решений:
 
-![display:block;margin:auto|](111.png)
+![display:block;margin:auto|](675.png)
